@@ -19,7 +19,7 @@ exports.payment = async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "hgamezy-vercel-frontend.vercel.app/",
+      success_url: "gamezy-vercel-frontend.vercel.app/",
       cancel_url: "gamezy-vercel-frontend.vercel.app/",
     });
     res.status(200).json({ id: session.id });
